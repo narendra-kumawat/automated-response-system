@@ -12,6 +12,6 @@ python automated_response_system.py
 
 To change the path of the input file open the automated_response_system.py and edit this line
 ```
-#chage the path here
+#change the path here
  with open('json/assignment_1_input_2.json') as file:
 ```
