@@ -1,6 +1,6 @@
 # automated-response-system
 Approach to solving the Problem:
-1. First iterating over the list of dictionary 'question'.
+1. First, iterating over the list of dictionary 'question'.
 2. After that according to the JSON instruction input is taken from the user and appropriate out is printed on the console.
 3. The system is developed in Python3.5 or higher version of Python interpreter.
 
