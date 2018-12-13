@@ -1,17 +1,20 @@
+# Python3.5 or higher version of Python Interprater is required to run this python script.
 import json
 import pprint
 
-pp = pprint.PrettyPrinter(indent=6)
+pp = pprint.PrettyPrinter(indent=4) 
 
 class AutomatedResponseSystem():
 
     def sample_text_function(self):
 
+        # This data_dict stores all the variable that are read from the input_json file
         data_dict ={}
+
         with open('json/assignment_1_input_2.json') as file:
             data = json.load(file)
 
-            #iterating over the questions list
+            #iterating over the questions list and reading instruction one by one
             for dictionary in data['questions']:
 
                 try:
@@ -19,7 +22,9 @@ class AutomatedResponseSystem():
                         expression = dictionary['conditions'][0][0].replace( dictionary['var'], "data_dict['" + dictionary['var'] + "']" )
                         print(expression)
                         if eval(expression):
-                            pass
+                            if "text" in dictionary:
+                                print(dictionary['text'])
+                                continue
                         else:
                             continue
                 except Exception as error:

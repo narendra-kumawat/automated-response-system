@@ -47,7 +47,7 @@
     "stage5":[ #CONDITIONAL BLOCK DEPENDS ON WHETHER THE USER ENTERED A WRONG INPUT FOR AGE
         {
             "message":{
-                "text":"I couldn't quite get how that response can be your age :/ Please enter your valid age."
+                "text":"I couldn't quite get how that response can be your age :/n Please enter your valid age."
             }
         }
     ],
